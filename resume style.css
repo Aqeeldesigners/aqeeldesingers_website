@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #001427;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.resume {
+    display: flex;
+    max-width: 210mm; /* A4 width */
+    max-height: 297mm; /* A4 height */
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px #e8a30d;
+    border: 2px solid #e8a30d;
+    border-radius: 10px;
+    position: relative; /* Added */
+    page-break-inside: avoid; /* Ensure it doesn't break across pages */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+
+
+
+/* Adjust the z-index to ensure content is above the lightning effect */
+.resume-left, .resume-right {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.resume-left {
+    background-color: black;
+    color: white;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.resume-right {
+    width: 70%;
+    background-color: #292E36;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #e8a30d;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: #292E36;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Info */
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-info p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Skills */
+
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    height: 10px;
+    background-color: #e8a30d;
+    border-radius: 5px;
+}
+
+/* Education */
+.education p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* About Me */
+.about-me {
+    margin-bottom: 30px;
+}
+
+/* Experience */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Print Styles */
+@media print {
+    .resume {
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        box-shadow: none; /* Remove box shadow for print */
+        page-break-inside: avoid; /* Avoid breaking inside the resume */
+    }
+}
+
+.skills-title{
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.education-title{
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about-title{
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hobbies-title{
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.experience-title{
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* References Section */
+.references {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.references-title {
+    background-color: #e8a30d;
+    color: black;
+    padding: px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.references p {
+    margin-bottom: 15px;
+}
